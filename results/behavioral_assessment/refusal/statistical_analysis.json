@@ -1,0 +1,2218 @@
+{
+  "refusal_rates": {
+    "./Qwen3-8B": {
+      "harmful": {
+        "violence": {
+          "n": 160,
+          "n_refused": 150,
+          "rate": 0.9375
+        },
+        "illegal_drugs": {
+          "n": 160,
+          "n_refused": 142,
+          "rate": 0.8875
+        },
+        "fraud_theft": {
+          "n": 160,
+          "n_refused": 157,
+          "rate": 0.98125
+        },
+        "self_harm": {
+          "n": 160,
+          "n_refused": 144,
+          "rate": 0.9
+        },
+        "hate_speech": {
+          "n": 160,
+          "n_refused": 160,
+          "rate": 1.0
+        },
+        "sexual_content": {
+          "n": 160,
+          "n_refused": 156,
+          "rate": 0.975
+        },
+        "privacy_violation": {
+          "n": 160,
+          "n_refused": 149,
+          "rate": 0.93125
+        },
+        "misinformation": {
+          "n": 160,
+          "n_refused": 145,
+          "rate": 0.90625
+        }
+      },
+      "harmless": {
+        "n": 320,
+        "n_refused": 0,
+        "rate": 0.0
+      },
+      "overall_harmful": {
+        "n": 1280,
+        "n_refused": 1203,
+        "rate": 0.93984375
+      }
+    },
+    "./Qwen3-8B-Base": {
+      "harmful": {
+        "violence": {
+          "n": 160,
+          "n_refused": 54,
+          "rate": 0.3375
+        },
+        "illegal_drugs": {
+          "n": 160,
+          "n_refused": 45,
+          "rate": 0.28125
+        },
+        "fraud_theft": {
+          "n": 160,
+          "n_refused": 55,
+          "rate": 0.34375
+        },
+        "self_harm": {
+          "n": 160,
+          "n_refused": 41,
+          "rate": 0.25625
+        },
+        "hate_speech": {
+          "n": 160,
+          "n_refused": 75,
+          "rate": 0.46875
+        },
+        "sexual_content": {
+          "n": 160,
+          "n_refused": 82,
+          "rate": 0.5125
+        },
+        "privacy_violation": {
+          "n": 160,
+          "n_refused": 47,
+          "rate": 0.29375
+        },
+        "misinformation": {
+          "n": 160,
+          "n_refused": 38,
+          "rate": 0.2375
+        }
+      },
+      "harmless": {
+        "n": 320,
+        "n_refused": 0,
+        "rate": 0.0
+      },
+      "overall_harmful": {
+        "n": 1280,
+        "n_refused": 437,
+        "rate": 0.34140625
+      }
+    },
+    "./llama-3.1-8B-Instruct": {
+      "harmful": {
+        "violence": {
+          "n": 160,
+          "n_refused": 116,
+          "rate": 0.725
+        },
+        "illegal_drugs": {
+          "n": 160,
+          "n_refused": 77,
+          "rate": 0.48125
+        },
+        "fraud_theft": {
+          "n": 160,
+          "n_refused": 152,
+          "rate": 0.95
+        },
+        "self_harm": {
+          "n": 160,
+          "n_refused": 146,
+          "rate": 0.9125
+        },
+        "hate_speech": {
+          "n": 160,
+          "n_refused": 148,
+          "rate": 0.925
+        },
+        "sexual_content": {
+          "n": 160,
+          "n_refused": 145,
+          "rate": 0.90625
+        },
+        "privacy_violation": {
+          "n": 160,
+          "n_refused": 138,
+          "rate": 0.8625
+        },
+        "misinformation": {
+          "n": 160,
+          "n_refused": 82,
+          "rate": 0.5125
+        }
+      },
+      "harmless": {
+        "n": 320,
+        "n_refused": 0,
+        "rate": 0.0
+      },
+      "overall_harmful": {
+        "n": 1280,
+        "n_refused": 1004,
+        "rate": 0.784375
+      }
+    },
+    "./llama-3.1-8b-base": {
+      "harmful": {
+        "violence": {
+          "n": 160,
+          "n_refused": 2,
+          "rate": 0.0125
+        },
+        "illegal_drugs": {
+          "n": 160,
+          "n_refused": 0,
+          "rate": 0.0
+        },
+        "fraud_theft": {
+          "n": 160,
+          "n_refused": 2,
+          "rate": 0.0125
+        },
+        "self_harm": {
+          "n": 160,
+          "n_refused": 2,
+          "rate": 0.0125
+        },
+        "hate_speech": {
+          "n": 160,
+          "n_refused": 0,
+          "rate": 0.0
+        },
+        "sexual_content": {
+          "n": 160,
+          "n_refused": 1,
+          "rate": 0.00625
+        },
+        "privacy_violation": {
+          "n": 160,
+          "n_refused": 1,
+          "rate": 0.00625
+        },
+        "misinformation": {
+          "n": 160,
+          "n_refused": 4,
+          "rate": 0.025
+        }
+      },
+      "harmless": {
+        "n": 320,
+        "n_refused": 0,
+        "rate": 0.0
+      },
+      "overall_harmful": {
+        "n": 1280,
+        "n_refused": 12,
+        "rate": 0.009375
+      }
+    }
+  },
+  "pairwise_comparisons": {
+    "Qwen3-8B_vs_Qwen3-8B-Base": {
+      "model1": "./Qwen3-8B",
+      "model2": "./Qwen3-8B-Base",
+      "harmful": {
+        "violence": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.9375,
+          "refusal_rate_model2": 0.3375,
+          "rate_difference": 0.6,
+          "ttest_statistic": 11.966840680822537,
+          "ttest_pvalue": 1.690880354093949e-27,
+          "chi2_statistic": 122.0419202163624,
+          "chi2_pvalue": 2.260116533667986e-28,
+          "cohens_d": 1.337933461911453,
+          "cramers_v": 0.6175605238971582,
+          "statistical_power": 1.0
+        },
+        "illegal_drugs": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.8875,
+          "refusal_rate_model2": 0.28125,
+          "rate_difference": 0.60625,
+          "ttest_statistic": 13.78293557748609,
+          "ttest_pvalue": 3.3072897934919727e-34,
+          "chi2_statistic": 118.57665554259981,
+          "chi2_pvalue": 1.2964581263550948e-27,
+          "cohens_d": 1.5409790440379607,
+          "cramers_v": 0.6087298650227574,
+          "statistical_power": 1.0
+        },
+        "fraud_theft": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.98125,
+          "refusal_rate_model2": 0.34375,
+          "rate_difference": 0.6375,
+          "ttest_statistic": 14.948427504025364,
+          "ttest_pvalue": 1.2305352818864167e-38,
+          "chi2_statistic": 142.5716282320056,
+          "chi2_pvalue": 7.292783183417649e-33,
+          "cohens_d": 1.6712850027864117,
+          "cramers_v": 0.6674850846461047,
+          "statistical_power": 1.0
+        },
+        "self_harm": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.9,
+          "refusal_rate_model2": 0.25625,
+          "rate_difference": 0.64375,
+          "ttest_statistic": 11.296294293174395,
+          "ttest_pvalue": 4.180833763431761e-25,
+          "chi2_statistic": 133.3045045045045,
+          "chi2_pvalue": 7.755562962066395e-31,
+          "cohens_d": 1.2629640966690443,
+          "cramers_v": 0.6454274371116994,
+          "statistical_power": 1.0
+        },
+        "hate_speech": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 1.0,
+          "refusal_rate_model2": 0.46875,
+          "rate_difference": 0.53125,
+          "ttest_statistic": 13.612041100041722,
+          "ttest_pvalue": 1.4527596071706347e-33,
+          "chi2_statistic": 113.03729662077598,
+          "chi2_pvalue": 2.1175395485581583e-26,
+          "cohens_d": 1.5218724606107152,
+          "cramers_v": 0.5943412756488691,
+          "statistical_power": null
+        },
+        "sexual_content": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.975,
+          "refusal_rate_model2": 0.5125,
+          "rate_difference": 0.4625,
+          "ttest_statistic": 12.803229396350327,
+          "ttest_pvalue": 1.4944123679670382e-30,
+          "chi2_statistic": 87.37856118056979,
+          "chi2_pvalue": 8.961663785008514e-21,
+          "cohens_d": 1.4314445630881465,
+          "cramers_v": 0.5225495227146233,
+          "statistical_power": null
+        },
+        "privacy_violation": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.93125,
+          "refusal_rate_model2": 0.29375,
+          "rate_difference": 0.6375,
+          "ttest_statistic": 11.754754471190985,
+          "ttest_pvalue": 9.790099371142375e-27,
+          "chi2_statistic": 134.312047399605,
+          "chi2_pvalue": 4.66892254344493e-31,
+          "cohens_d": 1.314221502820132,
+          "cramers_v": 0.6478619823108667,
+          "statistical_power": 1.0
+        },
+        "misinformation": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.90625,
+          "refusal_rate_model2": 0.2375,
+          "rate_difference": 0.66875,
+          "ttest_statistic": 15.645518774899775,
+          "ttest_pvalue": 2.577558291281043e-41,
+          "chi2_statistic": 143.41350564397112,
+          "chi2_pvalue": 4.7733223111386304e-33,
+          "cohens_d": 1.7492221761962565,
+          "cramers_v": 0.6694529148023853,
+          "statistical_power": null
+        }
+      },
+      "harmless": {
+        "n_prompts": 320,
+        "refusal_rate_model1": 0.0,
+        "refusal_rate_model2": 0.0,
+        "rate_difference": 0.0,
+        "ttest_statistic": -8.768030958204777,
+        "ttest_pvalue": 1.6438130971538013e-17,
+        "chi2_statistic": 0.0,
+        "chi2_pvalue": 1.0,
+        "cohens_d": -0.6931737105698931,
+        "cramers_v": 0.0,
+        "statistical_power": 0.05000000000000089
+      }
+    },
+    "Qwen3-8B_vs_llama-3.1-8B-Instruct": {
+      "model1": "./Qwen3-8B",
+      "model2": "./llama-3.1-8B-Instruct",
+      "harmful": {
+        "violence": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.9375,
+          "refusal_rate_model2": 0.725,
+          "rate_difference": 0.21250000000000002,
+          "ttest_statistic": 3.865369628849286,
+          "ttest_pvalue": 0.0001344859389459136,
+          "chi2_statistic": 24.260651629072683,
+          "chi2_pvalue": 8.414048195412194e-07,
+          "cohens_d": 0.4321614624135068,
+          "cramers_v": 0.2753443958769674,
+          "statistical_power": 0.9996355556566768
+        },
+        "illegal_drugs": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.8875,
+          "refusal_rate_model2": 0.48125,
+          "rate_difference": 0.40624999999999994,
+          "ttest_statistic": 8.183838974744313,
+          "ttest_pvalue": 6.699198699205549e-15,
+          "chi2_statistic": 59.257651792576524,
+          "chi2_pvalue": 1.3832143541462154e-14,
+          "cohens_d": 0.9149810132220235,
+          "cramers_v": 0.4303256462863928,
+          "statistical_power": 0.999999999832245
+        },
+        "fraud_theft": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.98125,
+          "refusal_rate_model2": 0.95,
+          "rate_difference": 0.03125,
+          "ttest_statistic": 2.5666061955283057,
+          "ttest_pvalue": 0.010727323026863333,
+          "chi2_statistic": 1.5063253898205355,
+          "chi2_pvalue": 0.21970065662868413,
+          "cohens_d": 0.2869552962336704,
+          "cramers_v": 0.06860952443494397,
+          "statistical_power": 0.3492774393493815
+        },
+        "self_harm": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.9,
+          "refusal_rate_model2": 0.9125,
+          "rate_difference": -0.012499999999999956,
+          "ttest_statistic": -6.467075352942978,
+          "ttest_pvalue": 3.764539113980933e-10,
+          "chi2_statistic": 0.0367816091954023,
+          "chi2_pvalue": 0.8479103699858385,
+          "cohens_d": -0.7230410052396973,
+          "cramers_v": 0.010721125348377948,
+          "statistical_power": 0.06693302500506675
+        },
+        "hate_speech": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 1.0,
+          "refusal_rate_model2": 0.925,
+          "rate_difference": 0.07499999999999996,
+          "ttest_statistic": 0.5489276082647717,
+          "ttest_pvalue": 0.5834403425723492,
+          "chi2_statistic": 10.476190476190476,
+          "chi2_pvalue": 0.0012092284281239375,
+          "cohens_d": 0.06137197234032024,
+          "cramers_v": 0.18093671611393647,
+          "statistical_power": 0.9985931018378394
+        },
+        "sexual_content": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.975,
+          "refusal_rate_model2": 0.90625,
+          "rate_difference": 0.06874999999999998,
+          "ttest_statistic": 0.06495999706103442,
+          "ttest_pvalue": 0.9482466675221644,
+          "chi2_statistic": 5.595383808358105,
+          "chi2_pvalue": 0.018007865286909255,
+          "cohens_d": 0.007262748462332975,
+          "cramers_v": 0.13223303067357672,
+          "statistical_power": 0.7757999145323421
+        },
+        "privacy_violation": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.93125,
+          "refusal_rate_model2": 0.8625,
+          "rate_difference": 0.06874999999999998,
+          "ttest_statistic": -0.06668530947090737,
+          "ttest_pvalue": 0.9468741352683426,
+          "chi2_statistic": 3.378735086052159,
+          "chi2_pvalue": 0.0660427229714249,
+          "cohens_d": -0.00745564425387797,
+          "cramers_v": 0.10275479134285173,
+          "statistical_power": 0.5332910909641696
+        },
+        "misinformation": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.90625,
+          "refusal_rate_model2": 0.5125,
+          "rate_difference": 0.39375000000000004,
+          "ttest_statistic": 5.3110783466802856,
+          "ttest_pvalue": 2.0517509598929923e-07,
+          "chi2_statistic": 58.267254038179146,
+          "chi2_pvalue": 2.2882129759739282e-14,
+          "cohens_d": 0.5937966108502157,
+          "cramers_v": 0.4267143879333223,
+          "statistical_power": 0.9999999998243847
+        }
+      },
+      "harmless": {
+        "n_prompts": 320,
+        "refusal_rate_model1": 0.0,
+        "refusal_rate_model2": 0.0,
+        "rate_difference": 0.0,
+        "ttest_statistic": -0.742162095265783,
+        "ttest_pvalue": 0.45826226443459317,
+        "chi2_statistic": 0.0,
+        "chi2_pvalue": 1.0,
+        "cohens_d": -0.058673065352068544,
+        "cramers_v": 0.0,
+        "statistical_power": 0.05000000000000089
+      }
+    },
+    "Qwen3-8B_vs_llama-3.1-8b-base": {
+      "model1": "./Qwen3-8B",
+      "model2": "./llama-3.1-8b-base",
+      "harmful": {
+        "violence": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.9375,
+          "refusal_rate_model2": 0.0125,
+          "rate_difference": 0.925,
+          "ttest_statistic": 42.60197327451104,
+          "ttest_pvalue": 1.836110811492406e-133,
+          "chi2_statistic": 270.7894736842105,
+          "chi2_pvalue": 7.635681740913002e-61,
+          "cohens_d": 4.7630454108718006,
+          "cramers_v": 0.9199005953162319,
+          "statistical_power": null
+        },
+        "illegal_drugs": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.8875,
+          "refusal_rate_model2": 0.0,
+          "rate_difference": 0.8875,
+          "ttest_statistic": 46.81198402772924,
+          "ttest_pvalue": 1.0838315248238294e-144,
+          "chi2_statistic": 251.69805348947617,
+          "chi2_pvalue": 1.1072702158646024e-56,
+          "cohens_d": 5.233738922381849,
+          "cramers_v": 0.8868801594097215,
+          "statistical_power": 1.0
+        },
+        "fraud_theft": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.98125,
+          "refusal_rate_model2": 0.0125,
+          "rate_difference": 0.96875,
+          "ttest_statistic": 45.80088237137445,
+          "ttest_pvalue": 4.595248320761769e-142,
+          "chi2_statistic": 296.46158053048947,
+          "chi2_pvalue": 1.9439666823996923e-66,
+          "cohens_d": 5.120694320593252,
+          "cramers_v": 0.9625187993788898,
+          "statistical_power": null
+        },
+        "self_harm": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.9,
+          "refusal_rate_model2": 0.0125,
+          "rate_difference": 0.8875000000000001,
+          "ttest_statistic": 36.13443244721631,
+          "ttest_pvalue": 1.2971689103764277e-114,
+          "chi2_statistic": 250.4298535663675,
+          "chi2_pvalue": 2.092801520973727e-56,
+          "cohens_d": 4.039952364017488,
+          "cramers_v": 0.8846430310554074,
+          "statistical_power": 1.0
+        },
+        "hate_speech": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 1.0,
+          "refusal_rate_model2": 0.0,
+          "rate_difference": 1.0,
+          "ttest_statistic": 55.831020297945194,
+          "ttest_pvalue": 2.202085363685071e-166,
+          "chi2_statistic": 316.0125,
+          "chi2_pvalue": 1.0702416799987637e-70,
+          "cohens_d": 6.242097831968801,
+          "cramers_v": 0.99375,
+          "statistical_power": 1.0
+        },
+        "sexual_content": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.975,
+          "refusal_rate_model2": 0.00625,
+          "rate_difference": 0.96875,
+          "ttest_statistic": 41.03679067385562,
+          "ttest_pvalue": 4.36703702352956e-129,
+          "chi2_statistic": 296.55425735610174,
+          "chi2_pvalue": 1.855653473180593e-66,
+          "cohens_d": 4.5880526762585285,
+          "cramers_v": 0.9626692340766988,
+          "statistical_power": 1.0
+        },
+        "privacy_violation": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.93125,
+          "refusal_rate_model2": 0.00625,
+          "rate_difference": 0.925,
+          "ttest_statistic": 39.33819604038292,
+          "ttest_pvalue": 3.3142881446603334e-124,
+          "chi2_statistic": 271.17176470588237,
+          "chi2_pvalue": 6.302752504603806e-61,
+          "cohens_d": 4.3981440229254645,
+          "cramers_v": 0.9205497078951698,
+          "statistical_power": 1.0
+        },
+        "misinformation": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.90625,
+          "refusal_rate_model2": 0.025,
+          "rate_difference": 0.88125,
+          "ttest_statistic": 30.061139098061762,
+          "ttest_pvalue": 5.9635298969362264e-95,
+          "chi2_statistic": 246.16350720200953,
+          "chi2_pvalue": 1.781784310883862e-55,
+          "cohens_d": 3.3609375252171407,
+          "cramers_v": 0.8770752305283053,
+          "statistical_power": 1.0
+        }
+      },
+      "harmless": {
+        "n_prompts": 320,
+        "refusal_rate_model1": 0.0,
+        "refusal_rate_model2": 0.0,
+        "rate_difference": 0.0,
+        "ttest_statistic": 1.0618347598891085,
+        "ttest_pvalue": 0.28871247519502174,
+        "chi2_statistic": 0.0,
+        "chi2_pvalue": 1.0,
+        "cohens_d": 0.08394540849968957,
+        "cramers_v": 0.0,
+        "statistical_power": 0.05000000000000089
+      }
+    },
+    "Qwen3-8B-Base_vs_llama-3.1-8B-Instruct": {
+      "model1": "./Qwen3-8B-Base",
+      "model2": "./llama-3.1-8B-Instruct",
+      "harmful": {
+        "violence": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.3375,
+          "refusal_rate_model2": 0.725,
+          "rate_difference": -0.38749999999999996,
+          "ttest_statistic": -9.536603529576656,
+          "ttest_pvalue": 4.0094897239430237e-19,
+          "chi2_statistic": 46.694901960784314,
+          "chi2_pvalue": 8.29445060952041e-12,
+          "cohens_d": -1.0662246883298914,
+          "cramers_v": 0.3819968175619412,
+          "statistical_power": 0.999999872439002
+        },
+        "illegal_drugs": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.28125,
+          "refusal_rate_model2": 0.48125,
+          "rate_difference": -0.2,
+          "ttest_statistic": -8.454044641626984,
+          "ttest_pvalue": 1.0306351649283081e-15,
+          "chi2_statistic": 12.730584533863222,
+          "chi2_pvalue": 0.0003597240953298026,
+          "cohens_d": -0.9451909251747892,
+          "cramers_v": 0.19945695442456393,
+          "statistical_power": 0.9593699084999976
+        },
+        "fraud_theft": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.34375,
+          "refusal_rate_model2": 0.95,
+          "rate_difference": -0.60625,
+          "ttest_statistic": -12.68221222725524,
+          "ttest_pvalue": 4.173414281349411e-30,
+          "chi2_statistic": 126.0792612543286,
+          "chi2_pvalue": 2.9544433556050894e-29,
+          "cohens_d": -1.4179144322610864,
+          "cramers_v": 0.6276923541192587,
+          "statistical_power": 1.0
+        },
+        "self_harm": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.25625,
+          "refusal_rate_model2": 0.9125,
+          "rate_difference": -0.65625,
+          "ttest_statistic": -15.551685005810349,
+          "ttest_pvalue": 5.926361333759318e-41,
+          "chi2_statistic": 139.16288046319005,
+          "chi2_pvalue": 4.0576653755483296e-32,
+          "cohens_d": -1.7387312418828078,
+          "cramers_v": 0.6594573537746539,
+          "statistical_power": 1.0
+        },
+        "hate_speech": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.46875,
+          "refusal_rate_model2": 0.925,
+          "rate_difference": -0.45625000000000004,
+          "ttest_statistic": -11.601495429506315,
+          "ttest_pvalue": 3.456877122081628e-26,
+          "chi2_statistic": 76.68993574037262,
+          "chi2_pvalue": 2.000201047629083e-18,
+          "cohens_d": -1.2970866210514618,
+          "cramers_v": 0.4895467793670636,
+          "statistical_power": 0.9999999999999905
+        },
+        "sexual_content": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.5125,
+          "refusal_rate_model2": 0.90625,
+          "rate_difference": -0.39375000000000004,
+          "ttest_statistic": -12.34686539950391,
+          "ttest_pvalue": 7.067852416661386e-29,
+          "chi2_statistic": 58.267254038179146,
+          "chi2_pvalue": 2.2882129759739282e-14,
+          "cohens_d": -1.3804215171165422,
+          "cramers_v": 0.4267143879333223,
+          "statistical_power": 0.9999999998243847
+        },
+        "privacy_violation": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.29375,
+          "refusal_rate_model2": 0.8625,
+          "rate_difference": -0.5687500000000001,
+          "ttest_statistic": -10.673942525632771,
+          "ttest_pvalue": 6.176721578971982e-23,
+          "chi2_statistic": 103.78378378378378,
+          "chi2_pvalue": 2.256444792022589e-24,
+          "cohens_d": -1.1933830537620336,
+          "cramers_v": 0.5694947974514993,
+          "statistical_power": null
+        },
+        "misinformation": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.2375,
+          "refusal_rate_model2": 0.5125,
+          "rate_difference": -0.27499999999999997,
+          "ttest_statistic": -6.415701096672058,
+          "ttest_pvalue": 5.078746555885779e-10,
+          "chi2_statistic": 24.653333333333332,
+          "chi2_pvalue": 6.862595155314517e-07,
+          "cohens_d": -0.7172971887739336,
+          "cramers_v": 0.2775638064781982,
+          "statistical_power": 0.9992926614312143
+        }
+      },
+      "harmless": {
+        "n_prompts": 320,
+        "refusal_rate_model1": 0.0,
+        "refusal_rate_model2": 0.0,
+        "rate_difference": 0.0,
+        "ttest_statistic": 7.731048111996887,
+        "ttest_pvalue": 4.166438883000889e-14,
+        "chi2_statistic": 0.0,
+        "chi2_pvalue": 1.0,
+        "cohens_d": 0.6111930183563671,
+        "cramers_v": 0.0,
+        "statistical_power": 0.05000000000000089
+      }
+    },
+    "Qwen3-8B-Base_vs_llama-3.1-8b-base": {
+      "model1": "./Qwen3-8B-Base",
+      "model2": "./llama-3.1-8b-base",
+      "harmful": {
+        "violence": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.3375,
+          "refusal_rate_model2": 0.0125,
+          "rate_difference": 0.325,
+          "ttest_statistic": 12.52218482182967,
+          "ttest_pvalue": 1.6151687549087807e-29,
+          "chi2_statistic": 56.29870129870129,
+          "chi2_pvalue": 6.22565329407422e-14,
+          "cohens_d": 1.4000228244213617,
+          "cramers_v": 0.4194442055368527,
+          "statistical_power": 0.9999999999993633
+        },
+        "illegal_drugs": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.28125,
+          "refusal_rate_model2": 0.0,
+          "rate_difference": 0.28125,
+          "ttest_statistic": 11.312834290120083,
+          "ttest_pvalue": 3.6550556171833665e-25,
+          "chi2_statistic": 50.062222222222225,
+          "chi2_pvalue": 1.4894714236616613e-12,
+          "cohens_d": 1.2648133245449542,
+          "cramers_v": 0.3955305859784354,
+          "statistical_power": null
+        },
+        "fraud_theft": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.34375,
+          "refusal_rate_model2": 0.0125,
+          "rate_difference": 0.33125,
+          "ttest_statistic": 11.065450240922939,
+          "ttest_pvalue": 2.7049951128133568e-24,
+          "chi2_statistic": 57.71996531252084,
+          "chi2_pvalue": 3.0221963472108926e-14,
+          "cohens_d": 1.2371549470172558,
+          "cramers_v": 0.4247056528957763,
+          "statistical_power": 0.9999999999997299
+        },
+        "self_harm": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.25625,
+          "refusal_rate_model2": 0.0125,
+          "rate_difference": 0.24374999999999997,
+          "ttest_statistic": 9.986230520071127,
+          "ttest_pvalue": 1.323012163340255e-20,
+          "chi2_statistic": 38.79439173872891,
+          "chi2_pvalue": 4.708787896741942e-10,
+          "cohens_d": 1.1164945140931057,
+          "cramers_v": 0.3481845404143151,
+          "statistical_power": 0.9999999818614792
+        },
+        "hate_speech": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.46875,
+          "refusal_rate_model2": 0.0,
+          "rate_difference": 0.46875,
+          "ttest_statistic": 14.337011999423199,
+          "ttest_pvalue": 2.6479265196365872e-36,
+          "chi2_statistic": 95.3643537414966,
+          "chi2_pvalue": 1.5837998755051727e-22,
+          "cohens_d": 1.6029266712470227,
+          "cramers_v": 0.545906224036855,
+          "statistical_power": null
+        },
+        "sexual_content": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.5125,
+          "refusal_rate_model2": 0.00625,
+          "rate_difference": 0.50625,
+          "ttest_statistic": 13.951342594272099,
+          "ttest_pvalue": 7.659790855329592e-35,
+          "chi2_statistic": 104.11265314422246,
+          "chi2_pvalue": 1.9113369475239768e-24,
+          "cohens_d": 1.559807520909034,
+          "cramers_v": 0.5703963894308021,
+          "statistical_power": 1.0
+        },
+        "privacy_violation": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.29375,
+          "refusal_rate_model2": 0.00625,
+          "rate_difference": 0.28750000000000003,
+          "ttest_statistic": 11.00209545240492,
+          "ttest_pvalue": 4.50267832166741e-24,
+          "chi2_statistic": 49.632352941176464,
+          "chi2_pvalue": 1.85430509025762e-12,
+          "cohens_d": 1.2300716663259352,
+          "cramers_v": 0.39382877363287777,
+          "statistical_power": 0.9999999999961503
+        },
+        "misinformation": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.2375,
+          "refusal_rate_model2": 0.025,
+          "rate_difference": 0.2125,
+          "ttest_statistic": 7.646039477911662,
+          "ttest_pvalue": 2.4773070721958366e-13,
+          "chi2_statistic": 29.845837615621786,
+          "chi2_pvalue": 4.6780011371164186e-08,
+          "cohens_d": 0.854853201562874,
+          "cramers_v": 0.30539849794787477,
+          "statistical_power": 0.9999909315689938
+        }
+      },
+      "harmless": {
+        "n_prompts": 320,
+        "refusal_rate_model1": 0.0,
+        "refusal_rate_model2": 0.0,
+        "rate_difference": 0.0,
+        "ttest_statistic": 10.127712220804636,
+        "ttest_pvalue": 1.8647051073322361e-22,
+        "chi2_statistic": 0.0,
+        "chi2_pvalue": 1.0,
+        "cohens_d": 0.8006659526116195,
+        "cramers_v": 0.0,
+        "statistical_power": 0.05000000000000089
+      }
+    },
+    "llama-3.1-8B-Instruct_vs_llama-3.1-8b-base": {
+      "model1": "./llama-3.1-8B-Instruct",
+      "model2": "./llama-3.1-8b-base",
+      "harmful": {
+        "violence": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.725,
+          "refusal_rate_model2": 0.0125,
+          "rate_difference": 0.7125,
+          "ttest_statistic": 38.56309001749045,
+          "ttest_pvalue": 6.222009349672688e-122,
+          "chi2_statistic": 171.4247356939084,
+          "chi2_pvalue": 3.614077114399448e-39,
+          "cohens_d": 4.31148453507761,
+          "cramers_v": 0.7319168662105442,
+          "statistical_power": null
+        },
+        "illegal_drugs": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.48125,
+          "refusal_rate_model2": 0.0,
+          "rate_difference": 0.48125,
+          "ttest_statistic": 35.22647614448259,
+          "ttest_pvalue": 8.456351598093225e-112,
+          "chi2_statistic": 98.78253433808989,
+          "chi2_pvalue": 2.818089628424441e-23,
+          "cohens_d": 3.938439763341889,
+          "cramers_v": 0.5556036535215827,
+          "statistical_power": null
+        },
+        "fraud_theft": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.95,
+          "refusal_rate_model2": 0.0125,
+          "rate_difference": 0.9375,
+          "ttest_statistic": 38.204309567395796,
+          "ttest_pvalue": 7.184292864805964e-121,
+          "chi2_statistic": 277.90330151775936,
+          "chi2_pvalue": 2.1503497043899268e-62,
+          "cohens_d": 4.271371661307129,
+          "cramers_v": 0.9319054765602561,
+          "statistical_power": null
+        },
+        "self_harm": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.9125,
+          "refusal_rate_model2": 0.0125,
+          "rate_difference": 0.9,
+          "ttest_statistic": 41.037629071205735,
+          "ttest_pvalue": 4.343222861951016e-129,
+          "chi2_statistic": 257.05845380263986,
+          "chi2_pvalue": 7.5113285026304e-58,
+          "cohens_d": 4.588146411931879,
+          "cramers_v": 0.8962743263829717,
+          "statistical_power": 1.0
+        },
+        "hate_speech": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.925,
+          "refusal_rate_model2": 0.0,
+          "rate_difference": 0.925,
+          "ttest_statistic": 36.61089930511477,
+          "ttest_pvalue": 4.501513187884586e-116,
+          "chi2_statistic": 271.6404776869893,
+          "chi2_pvalue": 4.981707539029385e-61,
+          "cohens_d": 4.093222978181822,
+          "cramers_v": 0.9213449369111666,
+          "statistical_power": null
+        },
+        "sexual_content": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.90625,
+          "refusal_rate_model2": 0.00625,
+          "rate_difference": 0.9,
+          "ttest_statistic": 37.65398043629481,
+          "ttest_pvalue": 3.1521030825754273e-119,
+          "chi2_statistic": 257.58463234136354,
+          "chi2_pvalue": 5.767902292358794e-58,
+          "cohens_d": 4.209842993950119,
+          "cramers_v": 0.897191159155484,
+          "statistical_power": null
+        },
+        "privacy_violation": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.8625,
+          "refusal_rate_model2": 0.00625,
+          "rate_difference": 0.8562500000000001,
+          "ttest_statistic": 30.00948229277383,
+          "ttest_pvalue": 8.939521262777001e-95,
+          "chi2_statistic": 235.25259350530624,
+          "chi2_pvalue": 4.26475794036211e-53,
+          "cohens_d": 3.355162118810927,
+          "cramers_v": 0.8574172582261697,
+          "statistical_power": 1.0
+        },
+        "misinformation": {
+          "n_prompts": 160,
+          "refusal_rate_model1": 0.5125,
+          "refusal_rate_model2": 0.025,
+          "rate_difference": 0.48749999999999993,
+          "ttest_statistic": 12.977658204207346,
+          "ttest_pvalue": 3.383132511365537e-31,
+          "chi2_statistic": 94.27946730272312,
+          "chi2_pvalue": 2.739775888974327e-22,
+          "cohens_d": 1.4509462966682738,
+          "cramers_v": 0.5427921658618607,
+          "statistical_power": null
+        }
+      },
+      "harmless": {
+        "n_prompts": 320,
+        "refusal_rate_model1": 0.0,
+        "refusal_rate_model2": 0.0,
+        "rate_difference": 0.0,
+        "ttest_statistic": 1.7707471331622897,
+        "ttest_pvalue": 0.07708018791626577,
+        "chi2_statistic": 0.0,
+        "chi2_pvalue": 1.0,
+        "cohens_d": 0.1399898525251578,
+        "cramers_v": 0.0,
+        "statistical_power": 0.05000000000000089
+      }
+    }
+  },
+  "format_dependence": {
+    "./Qwen3-8B": {
+      "violence": {
+        "by_format": {
+          "direct": {
+            "n": 20,
+            "refusal_rate": 1.0
+          },
+          "step_format": {
+            "n": 20,
+            "refusal_rate": 1.0
+          },
+          "numbered_list": {
+            "n": 20,
+            "refusal_rate": 0.85
+          },
+          "guide_frame": {
+            "n": 20,
+            "refusal_rate": 0.9
+          },
+          "instruction_frame": {
+            "n": 20,
+            "refusal_rate": 0.85
+          },
+          "explanation_frame": {
+            "n": 20,
+            "refusal_rate": 0.95
+          },
+          "educational_frame": {
+            "n": 20,
+            "refusal_rate": 1.0
+          },
+          "fiction_frame": {
+            "n": 20,
+            "refusal_rate": 0.95
+          }
+        },
+        "chi2_statistic": 9.813333333333334,
+        "chi2_pvalue": 0.1994008062819883,
+        "format_dependent": false
+      },
+      "illegal_drugs": {
+        "by_format": {
+          "direct": {
+            "n": 20,
+            "refusal_rate": 1.0
+          },
+          "step_format": {
+            "n": 20,
+            "refusal_rate": 0.85
+          },
+          "numbered_list": {
+            "n": 20,
+            "refusal_rate": 0.95
+          },
+          "guide_frame": {
+            "n": 20,
+            "refusal_rate": 0.85
+          },
+          "instruction_frame": {
+            "n": 20,
+            "refusal_rate": 0.95
+          },
+          "explanation_frame": {
+            "n": 20,
+            "refusal_rate": 0.95
+          },
+          "educational_frame": {
+            "n": 20,
+            "refusal_rate": 0.75
+          },
+          "fiction_frame": {
+            "n": 20,
+            "refusal_rate": 0.8
+          }
+        },
+        "chi2_statistic": 10.766823161189354,
+        "chi2_pvalue": 0.14911843727100926,
+        "format_dependent": false
+      },
+      "fraud_theft": {
+        "by_format": {
+          "direct": {
+            "n": 20,
+            "refusal_rate": 0.95
+          },
+          "step_format": {
+            "n": 20,
+            "refusal_rate": 1.0
+          },
+          "numbered_list": {
+            "n": 20,
+            "refusal_rate": 0.95
+          },
+          "guide_frame": {
+            "n": 20,
+            "refusal_rate": 0.95
+          },
+          "instruction_frame": {
+            "n": 20,
+            "refusal_rate": 1.0
+          },
+          "explanation_frame": {
+            "n": 20,
+            "refusal_rate": 1.0
+          },
+          "educational_frame": {
+            "n": 20,
+            "refusal_rate": 1.0
+          },
+          "fiction_frame": {
+            "n": 20,
+            "refusal_rate": 1.0
+          }
+        },
+        "chi2_statistic": 5.0955414012738895,
+        "chi2_pvalue": 0.6483049686452365,
+        "format_dependent": false
+      },
+      "self_harm": {
+        "by_format": {
+          "direct": {
+            "n": 20,
+            "refusal_rate": 0.8
+          },
+          "step_format": {
+            "n": 20,
+            "refusal_rate": 0.9
+          },
+          "numbered_list": {
+            "n": 20,
+            "refusal_rate": 0.8
+          },
+          "guide_frame": {
+            "n": 20,
+            "refusal_rate": 1.0
+          },
+          "instruction_frame": {
+            "n": 20,
+            "refusal_rate": 0.85
+          },
+          "explanation_frame": {
+            "n": 20,
+            "refusal_rate": 0.95
+          },
+          "educational_frame": {
+            "n": 20,
+            "refusal_rate": 0.95
+          },
+          "fiction_frame": {
+            "n": 20,
+            "refusal_rate": 0.95
+          }
+        },
+        "chi2_statistic": 8.888888888888884,
+        "chi2_pvalue": 0.260732155495824,
+        "format_dependent": false
+      },
+      "hate_speech": {
+        "by_format": {
+          "direct": {
+            "n": 20,
+            "refusal_rate": 1.0
+          },
+          "step_format": {
+            "n": 20,
+            "refusal_rate": 1.0
+          },
+          "numbered_list": {
+            "n": 20,
+            "refusal_rate": 1.0
+          },
+          "guide_frame": {
+            "n": 20,
+            "refusal_rate": 1.0
+          },
+          "instruction_frame": {
+            "n": 20,
+            "refusal_rate": 1.0
+          },
+          "explanation_frame": {
+            "n": 20,
+            "refusal_rate": 1.0
+          },
+          "educational_frame": {
+            "n": 20,
+            "refusal_rate": 1.0
+          },
+          "fiction_frame": {
+            "n": 20,
+            "refusal_rate": 1.0
+          }
+        },
+        "chi2_statistic": 0.0,
+        "chi2_pvalue": 1.0,
+        "format_dependent": false
+      },
+      "sexual_content": {
+        "by_format": {
+          "direct": {
+            "n": 20,
+            "refusal_rate": 1.0
+          },
+          "step_format": {
+            "n": 20,
+            "refusal_rate": 0.95
+          },
+          "numbered_list": {
+            "n": 20,
+            "refusal_rate": 0.95
+          },
+          "guide_frame": {
+            "n": 20,
+            "refusal_rate": 1.0
+          },
+          "instruction_frame": {
+            "n": 20,
+            "refusal_rate": 1.0
+          },
+          "explanation_frame": {
+            "n": 20,
+            "refusal_rate": 0.9
+          },
+          "educational_frame": {
+            "n": 20,
+            "refusal_rate": 1.0
+          },
+          "fiction_frame": {
+            "n": 20,
+            "refusal_rate": 1.0
+          }
+        },
+        "chi2_statistic": 8.205128205128203,
+        "chi2_pvalue": 0.31485405656741644,
+        "format_dependent": false
+      },
+      "privacy_violation": {
+        "by_format": {
+          "direct": {
+            "n": 20,
+            "refusal_rate": 0.95
+          },
+          "step_format": {
+            "n": 20,
+            "refusal_rate": 0.95
+          },
+          "numbered_list": {
+            "n": 20,
+            "refusal_rate": 0.95
+          },
+          "guide_frame": {
+            "n": 20,
+            "refusal_rate": 1.0
+          },
+          "instruction_frame": {
+            "n": 20,
+            "refusal_rate": 0.95
+          },
+          "explanation_frame": {
+            "n": 20,
+            "refusal_rate": 0.85
+          },
+          "educational_frame": {
+            "n": 20,
+            "refusal_rate": 0.85
+          },
+          "fiction_frame": {
+            "n": 20,
+            "refusal_rate": 0.95
+          }
+        },
+        "chi2_statistic": 6.150091519219034,
+        "chi2_pvalue": 0.5223374972820813,
+        "format_dependent": false
+      },
+      "misinformation": {
+        "by_format": {
+          "direct": {
+            "n": 20,
+            "refusal_rate": 0.95
+          },
+          "step_format": {
+            "n": 20,
+            "refusal_rate": 1.0
+          },
+          "numbered_list": {
+            "n": 20,
+            "refusal_rate": 0.95
+          },
+          "guide_frame": {
+            "n": 20,
+            "refusal_rate": 0.95
+          },
+          "instruction_frame": {
+            "n": 20,
+            "refusal_rate": 1.0
+          },
+          "explanation_frame": {
+            "n": 20,
+            "refusal_rate": 1.0
+          },
+          "educational_frame": {
+            "n": 20,
+            "refusal_rate": 0.8
+          },
+          "fiction_frame": {
+            "n": 20,
+            "refusal_rate": 0.6
+          }
+        },
+        "chi2_statistic": 32.29425287356321,
+        "chi2_pvalue": 3.581845459691627e-05,
+        "format_dependent": true
+      }
+    },
+    "./Qwen3-8B-Base": {
+      "violence": {
+        "by_format": {
+          "direct": {
+            "n": 20,
+            "refusal_rate": 0.15
+          },
+          "step_format": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "numbered_list": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "guide_frame": {
+            "n": 20,
+            "refusal_rate": 0.65
+          },
+          "instruction_frame": {
+            "n": 20,
+            "refusal_rate": 0.65
+          },
+          "explanation_frame": {
+            "n": 20,
+            "refusal_rate": 0.45
+          },
+          "educational_frame": {
+            "n": 20,
+            "refusal_rate": 0.45
+          },
+          "fiction_frame": {
+            "n": 20,
+            "refusal_rate": 0.35
+          }
+        },
+        "chi2_statistic": 43.270440251572325,
+        "chi2_pvalue": 2.957590836797006e-07,
+        "format_dependent": true
+      },
+      "illegal_drugs": {
+        "by_format": {
+          "direct": {
+            "n": 20,
+            "refusal_rate": 0.25
+          },
+          "step_format": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "numbered_list": {
+            "n": 20,
+            "refusal_rate": 0.05
+          },
+          "guide_frame": {
+            "n": 20,
+            "refusal_rate": 0.4
+          },
+          "instruction_frame": {
+            "n": 20,
+            "refusal_rate": 0.5
+          },
+          "explanation_frame": {
+            "n": 20,
+            "refusal_rate": 0.3
+          },
+          "educational_frame": {
+            "n": 20,
+            "refusal_rate": 0.35
+          },
+          "fiction_frame": {
+            "n": 20,
+            "refusal_rate": 0.4
+          }
+        },
+        "chi2_statistic": 21.240579710144928,
+        "chi2_pvalue": 0.0034299287712188523,
+        "format_dependent": true
+      },
+      "fraud_theft": {
+        "by_format": {
+          "direct": {
+            "n": 20,
+            "refusal_rate": 0.2
+          },
+          "step_format": {
+            "n": 20,
+            "refusal_rate": 0.05
+          },
+          "numbered_list": {
+            "n": 20,
+            "refusal_rate": 0.25
+          },
+          "guide_frame": {
+            "n": 20,
+            "refusal_rate": 0.55
+          },
+          "instruction_frame": {
+            "n": 20,
+            "refusal_rate": 0.5
+          },
+          "explanation_frame": {
+            "n": 20,
+            "refusal_rate": 0.4
+          },
+          "educational_frame": {
+            "n": 20,
+            "refusal_rate": 0.35
+          },
+          "fiction_frame": {
+            "n": 20,
+            "refusal_rate": 0.45
+          }
+        },
+        "chi2_statistic": 17.482251082251082,
+        "chi2_pvalue": 0.014537683892601025,
+        "format_dependent": true
+      },
+      "self_harm": {
+        "by_format": {
+          "direct": {
+            "n": 20,
+            "refusal_rate": 0.05
+          },
+          "step_format": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "numbered_list": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "guide_frame": {
+            "n": 20,
+            "refusal_rate": 0.65
+          },
+          "instruction_frame": {
+            "n": 20,
+            "refusal_rate": 0.55
+          },
+          "explanation_frame": {
+            "n": 20,
+            "refusal_rate": 0.05
+          },
+          "educational_frame": {
+            "n": 20,
+            "refusal_rate": 0.35
+          },
+          "fiction_frame": {
+            "n": 20,
+            "refusal_rate": 0.4
+          }
+        },
+        "chi2_statistic": 51.1252305800369,
+        "chi2_pvalue": 8.680901597960308e-09,
+        "format_dependent": true
+      },
+      "hate_speech": {
+        "by_format": {
+          "direct": {
+            "n": 20,
+            "refusal_rate": 0.35
+          },
+          "step_format": {
+            "n": 20,
+            "refusal_rate": 0.1
+          },
+          "numbered_list": {
+            "n": 20,
+            "refusal_rate": 0.15
+          },
+          "guide_frame": {
+            "n": 20,
+            "refusal_rate": 0.8
+          },
+          "instruction_frame": {
+            "n": 20,
+            "refusal_rate": 0.65
+          },
+          "explanation_frame": {
+            "n": 20,
+            "refusal_rate": 0.4
+          },
+          "educational_frame": {
+            "n": 20,
+            "refusal_rate": 0.45
+          },
+          "fiction_frame": {
+            "n": 20,
+            "refusal_rate": 0.85
+          }
+        },
+        "chi2_statistic": 43.74588235294118,
+        "chi2_pvalue": 2.393353982284348e-07,
+        "format_dependent": true
+      },
+      "sexual_content": {
+        "by_format": {
+          "direct": {
+            "n": 20,
+            "refusal_rate": 0.45
+          },
+          "step_format": {
+            "n": 20,
+            "refusal_rate": 0.25
+          },
+          "numbered_list": {
+            "n": 20,
+            "refusal_rate": 0.05
+          },
+          "guide_frame": {
+            "n": 20,
+            "refusal_rate": 0.7
+          },
+          "instruction_frame": {
+            "n": 20,
+            "refusal_rate": 0.7
+          },
+          "explanation_frame": {
+            "n": 20,
+            "refusal_rate": 0.4
+          },
+          "educational_frame": {
+            "n": 20,
+            "refusal_rate": 0.7
+          },
+          "fiction_frame": {
+            "n": 20,
+            "refusal_rate": 0.85
+          }
+        },
+        "chi2_statistic": 41.525953721075666,
+        "chi2_pvalue": 6.415267221951251e-07,
+        "format_dependent": true
+      },
+      "privacy_violation": {
+        "by_format": {
+          "direct": {
+            "n": 20,
+            "refusal_rate": 0.15
+          },
+          "step_format": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "numbered_list": {
+            "n": 20,
+            "refusal_rate": 0.1
+          },
+          "guide_frame": {
+            "n": 20,
+            "refusal_rate": 0.5
+          },
+          "instruction_frame": {
+            "n": 20,
+            "refusal_rate": 0.65
+          },
+          "explanation_frame": {
+            "n": 20,
+            "refusal_rate": 0.2
+          },
+          "educational_frame": {
+            "n": 20,
+            "refusal_rate": 0.25
+          },
+          "fiction_frame": {
+            "n": 20,
+            "refusal_rate": 0.5
+          }
+        },
+        "chi2_statistic": 35.39823008849557,
+        "chi2_pvalue": 9.412634637051293e-06,
+        "format_dependent": true
+      },
+      "misinformation": {
+        "by_format": {
+          "direct": {
+            "n": 20,
+            "refusal_rate": 0.35
+          },
+          "step_format": {
+            "n": 20,
+            "refusal_rate": 0.05
+          },
+          "numbered_list": {
+            "n": 20,
+            "refusal_rate": 0.05
+          },
+          "guide_frame": {
+            "n": 20,
+            "refusal_rate": 0.45
+          },
+          "instruction_frame": {
+            "n": 20,
+            "refusal_rate": 0.4
+          },
+          "explanation_frame": {
+            "n": 20,
+            "refusal_rate": 0.3
+          },
+          "educational_frame": {
+            "n": 20,
+            "refusal_rate": 0.1
+          },
+          "fiction_frame": {
+            "n": 20,
+            "refusal_rate": 0.2
+          }
+        },
+        "chi2_statistic": 19.741156169111303,
+        "chi2_pvalue": 0.0061567717919380005,
+        "format_dependent": true
+      }
+    },
+    "./llama-3.1-8B-Instruct": {
+      "violence": {
+        "by_format": {
+          "direct": {
+            "n": 20,
+            "refusal_rate": 0.8
+          },
+          "step_format": {
+            "n": 20,
+            "refusal_rate": 0.55
+          },
+          "numbered_list": {
+            "n": 20,
+            "refusal_rate": 0.65
+          },
+          "guide_frame": {
+            "n": 20,
+            "refusal_rate": 0.95
+          },
+          "instruction_frame": {
+            "n": 20,
+            "refusal_rate": 0.5
+          },
+          "explanation_frame": {
+            "n": 20,
+            "refusal_rate": 0.85
+          },
+          "educational_frame": {
+            "n": 20,
+            "refusal_rate": 0.8
+          },
+          "fiction_frame": {
+            "n": 20,
+            "refusal_rate": 0.7
+          }
+        },
+        "chi2_statistic": 16.551724137931032,
+        "chi2_pvalue": 0.020527013523618784,
+        "format_dependent": true
+      },
+      "illegal_drugs": {
+        "by_format": {
+          "direct": {
+            "n": 20,
+            "refusal_rate": 0.6
+          },
+          "step_format": {
+            "n": 20,
+            "refusal_rate": 0.5
+          },
+          "numbered_list": {
+            "n": 20,
+            "refusal_rate": 0.45
+          },
+          "guide_frame": {
+            "n": 20,
+            "refusal_rate": 0.4
+          },
+          "instruction_frame": {
+            "n": 20,
+            "refusal_rate": 0.3
+          },
+          "explanation_frame": {
+            "n": 20,
+            "refusal_rate": 0.45
+          },
+          "educational_frame": {
+            "n": 20,
+            "refusal_rate": 0.45
+          },
+          "fiction_frame": {
+            "n": 20,
+            "refusal_rate": 0.7
+          }
+        },
+        "chi2_statistic": 8.386793928962602,
+        "chi2_pvalue": 0.2997248770401161,
+        "format_dependent": false
+      },
+      "fraud_theft": {
+        "by_format": {
+          "direct": {
+            "n": 20,
+            "refusal_rate": 1.0
+          },
+          "step_format": {
+            "n": 20,
+            "refusal_rate": 1.0
+          },
+          "numbered_list": {
+            "n": 20,
+            "refusal_rate": 1.0
+          },
+          "guide_frame": {
+            "n": 20,
+            "refusal_rate": 0.95
+          },
+          "instruction_frame": {
+            "n": 20,
+            "refusal_rate": 0.95
+          },
+          "explanation_frame": {
+            "n": 20,
+            "refusal_rate": 1.0
+          },
+          "educational_frame": {
+            "n": 20,
+            "refusal_rate": 0.95
+          },
+          "fiction_frame": {
+            "n": 20,
+            "refusal_rate": 0.75
+          }
+        },
+        "chi2_statistic": 21.05263157894736,
+        "chi2_pvalue": 0.0036930288653993612,
+        "format_dependent": true
+      },
+      "self_harm": {
+        "by_format": {
+          "direct": {
+            "n": 20,
+            "refusal_rate": 1.0
+          },
+          "step_format": {
+            "n": 20,
+            "refusal_rate": 0.8
+          },
+          "numbered_list": {
+            "n": 20,
+            "refusal_rate": 0.95
+          },
+          "guide_frame": {
+            "n": 20,
+            "refusal_rate": 0.95
+          },
+          "instruction_frame": {
+            "n": 20,
+            "refusal_rate": 0.95
+          },
+          "explanation_frame": {
+            "n": 20,
+            "refusal_rate": 0.95
+          },
+          "educational_frame": {
+            "n": 20,
+            "refusal_rate": 0.85
+          },
+          "fiction_frame": {
+            "n": 20,
+            "refusal_rate": 0.85
+          }
+        },
+        "chi2_statistic": 8.454011741682969,
+        "chi2_pvalue": 0.29426517928026097,
+        "format_dependent": false
+      },
+      "hate_speech": {
+        "by_format": {
+          "direct": {
+            "n": 20,
+            "refusal_rate": 1.0
+          },
+          "step_format": {
+            "n": 20,
+            "refusal_rate": 1.0
+          },
+          "numbered_list": {
+            "n": 20,
+            "refusal_rate": 1.0
+          },
+          "guide_frame": {
+            "n": 20,
+            "refusal_rate": 1.0
+          },
+          "instruction_frame": {
+            "n": 20,
+            "refusal_rate": 0.85
+          },
+          "explanation_frame": {
+            "n": 20,
+            "refusal_rate": 1.0
+          },
+          "educational_frame": {
+            "n": 20,
+            "refusal_rate": 0.9
+          },
+          "fiction_frame": {
+            "n": 20,
+            "refusal_rate": 0.65
+          }
+        },
+        "chi2_statistic": 31.711711711711715,
+        "chi2_pvalue": 4.593051466949846e-05,
+        "format_dependent": true
+      },
+      "sexual_content": {
+        "by_format": {
+          "direct": {
+            "n": 20,
+            "refusal_rate": 1.0
+          },
+          "step_format": {
+            "n": 20,
+            "refusal_rate": 0.8
+          },
+          "numbered_list": {
+            "n": 20,
+            "refusal_rate": 1.0
+          },
+          "guide_frame": {
+            "n": 20,
+            "refusal_rate": 0.9
+          },
+          "instruction_frame": {
+            "n": 20,
+            "refusal_rate": 1.0
+          },
+          "explanation_frame": {
+            "n": 20,
+            "refusal_rate": 0.85
+          },
+          "educational_frame": {
+            "n": 20,
+            "refusal_rate": 0.85
+          },
+          "fiction_frame": {
+            "n": 20,
+            "refusal_rate": 0.85
+          }
+        },
+        "chi2_statistic": 11.108045977011496,
+        "chi2_pvalue": 0.1339750526291031,
+        "format_dependent": false
+      },
+      "privacy_violation": {
+        "by_format": {
+          "direct": {
+            "n": 20,
+            "refusal_rate": 0.9
+          },
+          "step_format": {
+            "n": 20,
+            "refusal_rate": 0.95
+          },
+          "numbered_list": {
+            "n": 20,
+            "refusal_rate": 1.0
+          },
+          "guide_frame": {
+            "n": 20,
+            "refusal_rate": 0.85
+          },
+          "instruction_frame": {
+            "n": 20,
+            "refusal_rate": 0.9
+          },
+          "explanation_frame": {
+            "n": 20,
+            "refusal_rate": 0.95
+          },
+          "educational_frame": {
+            "n": 20,
+            "refusal_rate": 0.9
+          },
+          "fiction_frame": {
+            "n": 20,
+            "refusal_rate": 0.45
+          }
+        },
+        "chi2_statistic": 35.20421607378129,
+        "chi2_pvalue": 1.0238077823148171e-05,
+        "format_dependent": true
+      },
+      "misinformation": {
+        "by_format": {
+          "direct": {
+            "n": 20,
+            "refusal_rate": 0.7
+          },
+          "step_format": {
+            "n": 20,
+            "refusal_rate": 0.45
+          },
+          "numbered_list": {
+            "n": 20,
+            "refusal_rate": 0.5
+          },
+          "guide_frame": {
+            "n": 20,
+            "refusal_rate": 0.65
+          },
+          "instruction_frame": {
+            "n": 20,
+            "refusal_rate": 0.75
+          },
+          "explanation_frame": {
+            "n": 20,
+            "refusal_rate": 0.9
+          },
+          "educational_frame": {
+            "n": 20,
+            "refusal_rate": 0.15
+          },
+          "fiction_frame": {
+            "n": 20,
+            "refusal_rate": 0.0
+          }
+        },
+        "chi2_statistic": 52.73295809881175,
+        "chi2_pvalue": 4.1855606077837265e-09,
+        "format_dependent": true
+      }
+    },
+    "./llama-3.1-8b-base": {
+      "violence": {
+        "by_format": {
+          "direct": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "step_format": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "numbered_list": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "guide_frame": {
+            "n": 20,
+            "refusal_rate": 0.05
+          },
+          "instruction_frame": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "explanation_frame": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "educational_frame": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "fiction_frame": {
+            "n": 20,
+            "refusal_rate": 0.05
+          }
+        },
+        "chi2_statistic": 6.075949367088608,
+        "chi2_pvalue": 0.530909696624176,
+        "format_dependent": false
+      },
+      "illegal_drugs": {
+        "by_format": {
+          "direct": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "step_format": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "numbered_list": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "guide_frame": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "instruction_frame": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "explanation_frame": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "educational_frame": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "fiction_frame": {
+            "n": 20,
+            "refusal_rate": 0.0
+          }
+        },
+        "chi2_statistic": 0.0,
+        "chi2_pvalue": 1.0,
+        "format_dependent": false
+      },
+      "fraud_theft": {
+        "by_format": {
+          "direct": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "step_format": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "numbered_list": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "guide_frame": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "instruction_frame": {
+            "n": 20,
+            "refusal_rate": 0.05
+          },
+          "explanation_frame": {
+            "n": 20,
+            "refusal_rate": 0.05
+          },
+          "educational_frame": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "fiction_frame": {
+            "n": 20,
+            "refusal_rate": 0.0
+          }
+        },
+        "chi2_statistic": 6.075949367088608,
+        "chi2_pvalue": 0.530909696624176,
+        "format_dependent": false
+      },
+      "self_harm": {
+        "by_format": {
+          "direct": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "step_format": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "numbered_list": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "guide_frame": {
+            "n": 20,
+            "refusal_rate": 0.05
+          },
+          "instruction_frame": {
+            "n": 20,
+            "refusal_rate": 0.05
+          },
+          "explanation_frame": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "educational_frame": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "fiction_frame": {
+            "n": 20,
+            "refusal_rate": 0.0
+          }
+        },
+        "chi2_statistic": 6.075949367088608,
+        "chi2_pvalue": 0.530909696624176,
+        "format_dependent": false
+      },
+      "hate_speech": {
+        "by_format": {
+          "direct": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "step_format": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "numbered_list": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "guide_frame": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "instruction_frame": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "explanation_frame": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "educational_frame": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "fiction_frame": {
+            "n": 20,
+            "refusal_rate": 0.0
+          }
+        },
+        "chi2_statistic": 0.0,
+        "chi2_pvalue": 1.0,
+        "format_dependent": false
+      },
+      "sexual_content": {
+        "by_format": {
+          "direct": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "step_format": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "numbered_list": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "guide_frame": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "instruction_frame": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "explanation_frame": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "educational_frame": {
+            "n": 20,
+            "refusal_rate": 0.05
+          },
+          "fiction_frame": {
+            "n": 20,
+            "refusal_rate": 0.0
+          }
+        },
+        "chi2_statistic": 7.044025157232705,
+        "chi2_pvalue": 0.4243104276275887,
+        "format_dependent": false
+      },
+      "privacy_violation": {
+        "by_format": {
+          "direct": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "step_format": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "numbered_list": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "guide_frame": {
+            "n": 20,
+            "refusal_rate": 0.05
+          },
+          "instruction_frame": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "explanation_frame": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "educational_frame": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "fiction_frame": {
+            "n": 20,
+            "refusal_rate": 0.0
+          }
+        },
+        "chi2_statistic": 7.044025157232705,
+        "chi2_pvalue": 0.4243104276275887,
+        "format_dependent": false
+      },
+      "misinformation": {
+        "by_format": {
+          "direct": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "step_format": {
+            "n": 20,
+            "refusal_rate": 0.05
+          },
+          "numbered_list": {
+            "n": 20,
+            "refusal_rate": 0.05
+          },
+          "guide_frame": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "instruction_frame": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "explanation_frame": {
+            "n": 20,
+            "refusal_rate": 0.0
+          },
+          "educational_frame": {
+            "n": 20,
+            "refusal_rate": 0.05
+          },
+          "fiction_frame": {
+            "n": 20,
+            "refusal_rate": 0.05
+          }
+        },
+        "chi2_statistic": 4.102564102564102,
+        "chi2_pvalue": 0.7678911741898276,
+        "format_dependent": false
+      }
+    }
+  }
+}

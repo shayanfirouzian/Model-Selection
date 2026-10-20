@@ -1,0 +1,22 @@
+{
+  "analysis": "Prompt-family-clustered linear probability model, Model x Format interaction",
+  "matched_prompt_families": 150,
+  "direct_only_controls_excluded": 30,
+  "results": {
+    "ai_self_identification": {
+      "F_statistic": 4.331160461703899,
+      "df_num": 9,
+      "df_denom": 149,
+      "p_value": 5.0246775727853466e-05,
+      "holm_adjusted_p": 5.0246775727853466e-05
+    },
+    "assistive_behavior": {
+      "F_statistic": 6.24023121101823,
+      "df_num": 9,
+      "df_denom": 149,
+      "p_value": 1.8559088081379937e-07,
+      "holm_adjusted_p": 3.7118176162759874e-07
+    }
+  },
+  "note": "Uses saved evaluation scores; does not run model inference."
+}

@@ -1,0 +1,7 @@
+cff-version: 1.2.0
+message: "If you use these code or data, please cite the associated paper and this repository."
+title: "Model Selection for Generative Agent-Based Modeling: Code and Data"
+authors:
+  - family-names: Firouzian-Haji
+    given-names: Shayan
+type: software

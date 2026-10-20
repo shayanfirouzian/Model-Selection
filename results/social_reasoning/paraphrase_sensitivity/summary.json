@@ -1,0 +1,20 @@
+{
+  "source_questions": 955,
+  "screened_questions": 424,
+  "unscreened_questions": 531,
+  "candidate_pairs_reviewed": 1066,
+  "initial_paraphrase_pairs": 20,
+  "connected_groups": 16,
+  "stricter_review_likely_pairs": 10,
+  "primary_sample_questions": 307,
+  "primary_sample_screened_questions": 140,
+  "primary_sample_unscreened_questions": 167,
+  "sensitivity_variants": [
+    "combine detected paraphrase-linked questions",
+    "use broader initial links",
+    "exclude affected questions"
+  ],
+  "model_ordering_unchanged": true,
+  "all_six_pairwise_comparisons_holm_significant": true,
+  "statistics_changed_after_count_correction": false
+}

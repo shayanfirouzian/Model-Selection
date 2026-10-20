@@ -1,0 +1,10 @@
+# Dependencies for saved-result audits, statistical summaries, and figure generation
+numpy
+scipy
+pandas
+statsmodels
+matplotlib
+seaborn
+scikit-learn
+nbformat
+jupyter

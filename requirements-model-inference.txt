@@ -1,0 +1,8 @@
+-r requirements.txt
+# Additional dependencies for rerunning model evaluation notebooks/scripts.
+# Install a PyTorch build appropriate to your accelerator from https://pytorch.org/get-started/locally/.
+torch
+transformers
+sentence-transformers
+tqdm
+accelerate

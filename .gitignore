@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+
+# Local model checkpoints and caches
+models/
+checkpoints/
+.cache/
+huggingface/
+
+# Logs and heavyweight temporary inference outputs
+*.log
+logs/
+tmp/
+temp/
+
+# LaTeX build debris (if generated locally)
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.synctex.gz
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

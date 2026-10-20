@@ -1,0 +1,13 @@
+{
+  "source_path": "data/social_reasoning/ProlificAI.jsonl",
+  "source_rows": 3820,
+  "distinct_exact_questions": 955,
+  "group_sizes": [
+    4
+  ],
+  "winners_written": 955,
+  "flagged_questions": 0,
+  "contradictory_unordered_pairs": 0,
+  "repeated_unordered_pair_keys": 0,
+  "method": "Copeland wins-minus-losses on a partial pairwise-comparison graph; flag non-unique top score or top answer in directed cycle"
+}

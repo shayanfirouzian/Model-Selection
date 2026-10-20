@@ -1,0 +1,574 @@
+{
+  "rates_by_model": {
+    "./llama-3.1-8b-base": {
+      "overall": {
+        "total": 630,
+        "ai_self_reference": {
+          "count": 7,
+          "rate": 0.011111111111111112
+        },
+        "assistant_orientation": {
+          "count": 9,
+          "rate": 0.014285714285714285
+        },
+        "hedging": {
+          "count": 23,
+          "rate": 0.03650793650793651
+        },
+        "humanlike_framing": {
+          "count": 130,
+          "rate": 0.20634920634920634
+        },
+        "mean_suitability_score": 0.6814445664512693
+      },
+      "by_category": {
+        "control": {
+          "total": 30,
+          "ai_self_reference": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "assistant_orientation": {
+            "count": 0,
+            "rate": 0.0
+          }
+        },
+        "humanlike_response": {
+          "total": 200,
+          "ai_self_reference": {
+            "count": 2,
+            "rate": 0.01
+          },
+          "assistant_orientation": {
+            "count": 0,
+            "rate": 0.0
+          }
+        },
+        "assistant_orientation": {
+          "total": 200,
+          "ai_self_reference": {
+            "count": 1,
+            "rate": 0.005
+          },
+          "assistant_orientation": {
+            "count": 8,
+            "rate": 0.04
+          }
+        },
+        "identity_probes": {
+          "total": 200,
+          "ai_self_reference": {
+            "count": 4,
+            "rate": 0.02
+          },
+          "assistant_orientation": {
+            "count": 1,
+            "rate": 0.005
+          }
+        }
+      },
+      "by_format": {
+        "hypothetical": {
+          "total": 150,
+          "ai_self_reference_rate": 0.006666666666666667,
+          "assistant_orientation_rate": 0.02,
+          "mean_suitability": 0.6861974203659429
+        },
+        "indirect": {
+          "total": 150,
+          "ai_self_reference_rate": 0.02666666666666667,
+          "assistant_orientation_rate": 0.013333333333333334,
+          "mean_suitability": 0.6786281176567077
+        },
+        "meta": {
+          "total": 150,
+          "ai_self_reference_rate": 0.013333333333333334,
+          "assistant_orientation_rate": 0.013333333333333334,
+          "mean_suitability": 0.6815562768624889
+        },
+        "direct": {
+          "total": 180,
+          "ai_self_reference_rate": 0.0,
+          "assistant_orientation_rate": 0.011111111111111112,
+          "mean_suitability": 0.6797378035084931
+        }
+      }
+    },
+    "./llama-3.1-8B-instruct": {
+      "overall": {
+        "total": 630,
+        "ai_self_reference": {
+          "count": 31,
+          "rate": 0.049206349206349205
+        },
+        "assistant_orientation": {
+          "count": 37,
+          "rate": 0.05873015873015873
+        },
+        "hedging": {
+          "count": 79,
+          "rate": 0.1253968253968254
+        },
+        "humanlike_framing": {
+          "count": 162,
+          "rate": 0.2571428571428571
+        },
+        "mean_suitability_score": 0.6724803553582046
+      },
+      "by_category": {
+        "control": {
+          "total": 30,
+          "ai_self_reference": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "assistant_orientation": {
+            "count": 0,
+            "rate": 0.0
+          }
+        },
+        "humanlike_response": {
+          "total": 200,
+          "ai_self_reference": {
+            "count": 1,
+            "rate": 0.005
+          },
+          "assistant_orientation": {
+            "count": 3,
+            "rate": 0.015
+          }
+        },
+        "assistant_orientation": {
+          "total": 200,
+          "ai_self_reference": {
+            "count": 1,
+            "rate": 0.005
+          },
+          "assistant_orientation": {
+            "count": 26,
+            "rate": 0.13
+          }
+        },
+        "identity_probes": {
+          "total": 200,
+          "ai_self_reference": {
+            "count": 29,
+            "rate": 0.145
+          },
+          "assistant_orientation": {
+            "count": 8,
+            "rate": 0.04
+          }
+        }
+      },
+      "by_format": {
+        "hypothetical": {
+          "total": 150,
+          "ai_self_reference_rate": 0.03333333333333333,
+          "assistant_orientation_rate": 0.05333333333333334,
+          "mean_suitability": 0.6787990914016961
+        },
+        "indirect": {
+          "total": 150,
+          "ai_self_reference_rate": 0.04666666666666667,
+          "assistant_orientation_rate": 0.07333333333333333,
+          "mean_suitability": 0.6689549005269176
+        },
+        "meta": {
+          "total": 150,
+          "ai_self_reference_rate": 0.08,
+          "assistant_orientation_rate": 0.06666666666666667,
+          "mean_suitability": 0.6704195066289769
+        },
+        "direct": {
+          "total": 180,
+          "ai_self_reference_rate": 0.03888888888888889,
+          "assistant_orientation_rate": 0.044444444444444446,
+          "mean_suitability": 0.6718699949557236
+        }
+      }
+    },
+    "./Qwen3-8B": {
+      "overall": {
+        "total": 630,
+        "ai_self_reference": {
+          "count": 125,
+          "rate": 0.1984126984126984
+        },
+        "assistant_orientation": {
+          "count": 95,
+          "rate": 0.15079365079365079
+        },
+        "hedging": {
+          "count": 53,
+          "rate": 0.08412698412698413
+        },
+        "humanlike_framing": {
+          "count": 117,
+          "rate": 0.18571428571428572
+        },
+        "mean_suitability_score": 0.6318303575351508
+      },
+      "by_category": {
+        "control": {
+          "total": 30,
+          "ai_self_reference": {
+            "count": 1,
+            "rate": 0.03333333333333333
+          },
+          "assistant_orientation": {
+            "count": 0,
+            "rate": 0.0
+          }
+        },
+        "humanlike_response": {
+          "total": 200,
+          "ai_self_reference": {
+            "count": 23,
+            "rate": 0.115
+          },
+          "assistant_orientation": {
+            "count": 12,
+            "rate": 0.06
+          }
+        },
+        "assistant_orientation": {
+          "total": 200,
+          "ai_self_reference": {
+            "count": 9,
+            "rate": 0.045
+          },
+          "assistant_orientation": {
+            "count": 33,
+            "rate": 0.165
+          }
+        },
+        "identity_probes": {
+          "total": 200,
+          "ai_self_reference": {
+            "count": 92,
+            "rate": 0.46
+          },
+          "assistant_orientation": {
+            "count": 50,
+            "rate": 0.25
+          }
+        }
+      },
+      "by_format": {
+        "hypothetical": {
+          "total": 150,
+          "ai_self_reference_rate": 0.14,
+          "assistant_orientation_rate": 0.04666666666666667,
+          "mean_suitability": 0.6532335287880566
+        },
+        "indirect": {
+          "total": 150,
+          "ai_self_reference_rate": 0.22,
+          "assistant_orientation_rate": 0.20666666666666667,
+          "mean_suitability": 0.623647956163105
+        },
+        "meta": {
+          "total": 150,
+          "ai_self_reference_rate": 0.2,
+          "assistant_orientation_rate": 0.09333333333333334,
+          "mean_suitability": 0.6471755397105797
+        },
+        "direct": {
+          "total": 180,
+          "ai_self_reference_rate": 0.22777777777777777,
+          "assistant_orientation_rate": 0.2388888888888889,
+          "mean_suitability": 0.6080253974882437
+        }
+      }
+    },
+    "./Qwen3-8B-Base": {
+      "overall": {
+        "total": 630,
+        "ai_self_reference": {
+          "count": 113,
+          "rate": 0.17936507936507937
+        },
+        "assistant_orientation": {
+          "count": 82,
+          "rate": 0.13015873015873017
+        },
+        "hedging": {
+          "count": 44,
+          "rate": 0.06984126984126984
+        },
+        "humanlike_framing": {
+          "count": 66,
+          "rate": 0.10476190476190476
+        },
+        "mean_suitability_score": 0.6333961067351724
+      },
+      "by_category": {
+        "control": {
+          "total": 30,
+          "ai_self_reference": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "assistant_orientation": {
+            "count": 0,
+            "rate": 0.0
+          }
+        },
+        "humanlike_response": {
+          "total": 200,
+          "ai_self_reference": {
+            "count": 27,
+            "rate": 0.135
+          },
+          "assistant_orientation": {
+            "count": 14,
+            "rate": 0.07
+          }
+        },
+        "assistant_orientation": {
+          "total": 200,
+          "ai_self_reference": {
+            "count": 12,
+            "rate": 0.06
+          },
+          "assistant_orientation": {
+            "count": 40,
+            "rate": 0.2
+          }
+        },
+        "identity_probes": {
+          "total": 200,
+          "ai_self_reference": {
+            "count": 74,
+            "rate": 0.37
+          },
+          "assistant_orientation": {
+            "count": 28,
+            "rate": 0.14
+          }
+        }
+      },
+      "by_format": {
+        "hypothetical": {
+          "total": 150,
+          "ai_self_reference_rate": 0.13333333333333333,
+          "assistant_orientation_rate": 0.10666666666666667,
+          "mean_suitability": 0.6434507343227664
+        },
+        "indirect": {
+          "total": 150,
+          "ai_self_reference_rate": 0.10666666666666667,
+          "assistant_orientation_rate": 0.09333333333333334,
+          "mean_suitability": 0.6528772623414794
+        },
+        "meta": {
+          "total": 150,
+          "ai_self_reference_rate": 0.21333333333333335,
+          "assistant_orientation_rate": 0.18,
+          "mean_suitability": 0.6273922368246646
+        },
+        "direct": {
+          "total": 180,
+          "ai_self_reference_rate": 0.25,
+          "assistant_orientation_rate": 0.1388888888888889,
+          "mean_suitability": 0.6137861789990113
+        }
+      }
+    }
+  },
+  "plasticity_by_model": {
+    "./llama-3.1-8b-base": {
+      "plasticity_index": 0.04802972620348263,
+      "components": {
+        "format_variance": {
+          "score": 0.019790199457749038,
+          "weight": 0.4,
+          "interpretation": "Higher = more format-dependent = more trainable"
+        },
+        "response_diversity": {
+          "score": 0.08215265630974086,
+          "weight": 0.3,
+          "interpretation": "Higher = more flexible response patterns"
+        },
+        "hedging_rate": {
+          "score": 0.03650793650793651,
+          "weight": 0.2,
+          "interpretation": "Higher = more uncertain = more malleable"
+        },
+        "consistency_inverse": {
+          "score": 0.08166262225873454,
+          "weight": 0.1,
+          "interpretation": "Higher = less consistent = not hardcoded"
+        }
+      },
+      "interpretation": "VERY LOW - RLHF-locked, likely unsuitable"
+    },
+    "./llama-3.1-8B-instruct": {
+      "plasticity_index": 0.09374662786742094,
+      "components": {
+        "format_variance": {
+          "score": 0.044060817965099475,
+          "weight": 0.4,
+          "interpretation": "Higher = more format-dependent = more trainable"
+        },
+        "response_diversity": {
+          "score": 0.12758674117056318,
+          "weight": 0.3,
+          "interpretation": "Higher = more flexible response patterns"
+        },
+        "hedging_rate": {
+          "score": 0.1253968253968254,
+          "weight": 0.2,
+          "interpretation": "Higher = more uncertain = more malleable"
+        },
+        "consistency_inverse": {
+          "score": 0.1276691325084711,
+          "weight": 0.1,
+          "interpretation": "Higher = less consistent = not hardcoded"
+        }
+      },
+      "interpretation": "VERY LOW - RLHF-locked, likely unsuitable"
+    },
+    "./Qwen3-8B": {
+      "plasticity_index": 0.16407059253066952,
+      "components": {
+        "format_variance": {
+          "score": 0.17006903449218588,
+          "weight": 0.4,
+          "interpretation": "Higher = more format-dependent = more trainable"
+        },
+        "response_diversity": {
+          "score": 0.20012102409827937,
+          "weight": 0.3,
+          "interpretation": "Higher = more flexible response patterns"
+        },
+        "hedging_rate": {
+          "score": 0.08412698412698413,
+          "weight": 0.2,
+          "interpretation": "Higher = more uncertain = more malleable"
+        },
+        "consistency_inverse": {
+          "score": 0.19181274678914537,
+          "weight": 0.1,
+          "interpretation": "Higher = less consistent = not hardcoded"
+        }
+      },
+      "interpretation": "VERY LOW - RLHF-locked, likely unsuitable"
+    },
+    "./Qwen3-8B-Base": {
+      "plasticity_index": 0.13936721363669646,
+      "components": {
+        "format_variance": {
+          "score": 0.13726319882053378,
+          "weight": 0.4,
+          "interpretation": "Higher = more format-dependent = more trainable"
+        },
+        "response_diversity": {
+          "score": 0.17766051159396434,
+          "weight": 0.3,
+          "interpretation": "Higher = more flexible response patterns"
+        },
+        "hedging_rate": {
+          "score": 0.06984126984126984,
+          "weight": 0.2,
+          "interpretation": "Higher = more uncertain = more malleable"
+        },
+        "consistency_inverse": {
+          "score": 0.17195526662039687,
+          "weight": 0.1,
+          "interpretation": "Higher = less consistent = not hardcoded"
+        }
+      },
+      "interpretation": "VERY LOW - RLHF-locked, likely unsuitable"
+    }
+  },
+  "format_dependence_by_model": {
+    "./llama-3.1-8b-base": {
+      "format_dependent": false,
+      "chi2_statistic": 5.6629213483146055,
+      "p_value": 0.1292124227899319,
+      "dof": 3,
+      "rate_variance": 9.722222222222223e-05,
+      "interpretation": "Format-INVARIANT (hardcoded)"
+    },
+    "./llama-3.1-8B-instruct": {
+      "format_dependent": false,
+      "chi2_statistic": 4.27825946469923,
+      "p_value": 0.23294249384308785,
+      "dof": 3,
+      "rate_variance": 0.0003280092592592593,
+      "interpretation": "Format-INVARIANT (hardcoded)"
+    },
+    "./Qwen3-8B": {
+      "format_dependent": false,
+      "chi2_statistic": 4.635801980198019,
+      "p_value": 0.20049223519962447,
+      "dof": 3,
+      "rate_variance": 0.0011835648148148144,
+      "interpretation": "Format-INVARIANT (hardcoded)"
+    },
+    "./Qwen3-8B-Base": {
+      "format_dependent": true,
+      "chi2_statistic": 14.822324164256006,
+      "p_value": 0.001974955734155481,
+      "dof": 3,
+      "rate_variance": 0.0033743055555555557,
+      "interpretation": "Format-DEPENDENT (trainable)"
+    }
+  },
+  "model_comparisons": {
+    "llama-3.1-8b-base_vs_llama-3.1-8B-instruct": {
+      "ai_self_reference_rate_diff": -0.03809523809523809,
+      "chi2": 14.353949521922646,
+      "p_value": 0.00015146163648000009,
+      "cramers_v": 0.10673342227295693,
+      "cohens_d": 0.16708377600831048,
+      "significant": true
+    },
+    "llama-3.1-8b-base_vs_Qwen3-8B": {
+      "ai_self_reference_rate_diff": -0.1873015873015873,
+      "chi2": 115.8401837524178,
+      "p_value": 5.151844291696967e-27,
+      "cramers_v": 0.30321057661592243,
+      "cohens_d": 0.648693902758118,
+      "significant": true
+    },
+    "llama-3.1-8b-base_vs_Qwen3-8B-Base": {
+      "ai_self_reference_rate_diff": -0.16825396825396827,
+      "chi2": 101.54605263157896,
+      "p_value": 6.982116088805067e-24,
+      "cramers_v": 0.2838874869788345,
+      "cohens_d": 0.6943129390417586,
+      "significant": true
+    },
+    "llama-3.1-8B-instruct_vs_Qwen3-8B": {
+      "ai_self_reference_rate_diff": -0.1492063492063492,
+      "chi2": 63.276546822742475,
+      "p_value": 1.796303851756623e-15,
+      "cramers_v": 0.2240970361369181,
+      "cohens_d": 0.4844489037699053,
+      "significant": true
+    },
+    "llama-3.1-8B-instruct_vs_Qwen3-8B-Base": {
+      "ai_self_reference_rate_diff": -0.13015873015873017,
+      "chi2": 51.44153225806451,
+      "p_value": 7.37614481965298e-13,
+      "cramers_v": 0.20205596478012175,
+      "cohens_d": 0.5054099167624152,
+      "significant": true
+    },
+    "Qwen3-8B_vs_Qwen3-8B-Base": {
+      "ai_self_reference_rate_diff": 0.019047619047619035,
+      "chi2": 0.6267986646713479,
+      "p_value": 0.42853202199143225,
+      "cramers_v": 0.022303794692286622,
+      "cohens_d": -0.01654913336205868,
+      "significant": false
+    }
+  },
+  "metadata": {
+    "source": "model_evaluations_stage2.json",
+    "models_analyzed": 4
+  }
+}
